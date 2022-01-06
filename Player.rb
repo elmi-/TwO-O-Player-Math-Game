@@ -14,11 +14,10 @@ class Player
     puts q.new_question(@name)
     player_answer = gets.chomp
     if q.correct_answer?(player_answer.to_i)
-      puts "Correct!"
+      puts "Correct! Of course #{player_answer.to_i} equals #{q.correct_answer(player_answer.to_i)}!!"
     else
-      puts "Wrong!"
+      puts "Wrong! #{player_answer.to_i} does not equal #{q.correct_answer(player_answer.to_i)}, dummy!"
       wrong_answer
-      puts "#{@name} now has #{@LIVES} lives remaining"
     end
   end
 end

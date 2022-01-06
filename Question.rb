@@ -11,4 +11,9 @@ class Question
     answer = @val1 + @val2
     answer == player_answer
   end
+
+  def correct_answer(player_answer) 
+    answer = @val1 + @val2
+    answer
+  end
 end
